@@ -1,11 +1,12 @@
 @import "../../../assets/styles/variables.css";
 
 .hero-banner {
-  height: 40dvh;
+  height: 50dvh;
   width: 100%;
   background-color: var(--main-color);
   padding: 2rem;
   padding-bottom: 0;
+  position: relative;
 }
 
 .hero-banner__container {
@@ -13,7 +14,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100%;
   text-align: center;
 }
@@ -42,11 +43,14 @@
   margin: 2rem;
 }
 
-@media (max-width: 719px) {
-  .hero-banner {
-    height: 55dvh;
-  }
+.hero-banner-center {
+  width: 100%;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
 
+@media (max-width: 719px) {
   .hero-banner__list {
     gap: 1rem;
     justify-content: space-evenly;
@@ -54,10 +58,6 @@
 }
 
 @media (max-width: 545px) {
-  .hero-banner {
-    height: 64dvh;
-  }
-
   .hero-banner-text {
     font-size: 2.75rem;
   }
@@ -65,11 +65,34 @@
   .hero-banner__list {
     flex-wrap: wrap;
   }
+
+  .hero-banner {
+    height: 60dvh;
+  }
+}
+
+@media (max-width: 429px) {
+  .hero-banner__list {
+    margin: 1rem 2rem;
+  }
+
+  .hero-banner__large {
+    font-size: 1.5rem;
+  }
+
+  .hero-banner__small {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 406px) {
+  .hero-banner {
+    height: 70dvh;
+  }
 }
 
 @media (max-width: 346px) {
   .hero-banner {
-    height: 62dvh;
     padding-left: 1rem;
     padding-right: 1rem;
   }
