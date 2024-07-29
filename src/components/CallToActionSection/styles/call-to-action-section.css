@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables.css";
+
+.call-to-action-section__wrapper {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.call-to-action-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 45dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.call-to-action-heading {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.call-to-action-section .call-to-action {
+  width: 90%;
+}
+
+@media (max-width: 545px) {
+  .call-to-action-section .call-to-action {
+    width: 100%;
+  }
+
+  .call-to-action-section__wrapper {
+    padding: 2rem 1rem 2rem 1rem;
+  }
+}

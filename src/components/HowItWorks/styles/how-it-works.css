@@ -1,0 +1,42 @@
+.how-it-works {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.how-it-works__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.how-it-works__cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.how-it-works__card {
+  flex: 1;
+  padding: 2rem;
+  max-width: 380px;
+}
+
+.how-it-works-card__title {
+  margin: 1rem 0;
+}
+
+@media (max-width: 769px) {
+  .how-it-works__cards {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .how-it-works__card {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+}

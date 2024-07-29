@@ -1,0 +1,49 @@
+@import "../../../../assets/styles/variables.css";
+
+.call-to-action {
+  padding: 0 1.25rem;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.call-to-action__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding-right: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.call-to-action__form input {
+  flex: 1;
+  border: 0;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent;
+}
+
+.call-to-action__form button {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.hero-banner__large {
+  font-size: 2rem;
+}
+
+.hero-banner__small {
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 546px) {
+  .call-to-action {
+    max-width: 100%;
+  }
+}
