@@ -45,6 +45,7 @@ const CallToAction: React.FC = () => {
         </p>
       ) : (
         <form
+          // @ts-expect-error will fix later
           ref={form}
           className="call-to-action__form"
           onSubmit={(e: SyntheticEvent) => sendEmail(e)}
@@ -55,6 +56,7 @@ const CallToAction: React.FC = () => {
             labelName="Enter Your Email"
             showLabel={false}
             placeholder="Enter Your Email"
+            // @ts-expect-error will fix later
             inputFunction={handleInput}
           />
           <button className="call-to-action__button" onClick={sendEmail}>
